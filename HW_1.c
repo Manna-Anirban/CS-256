@@ -13,6 +13,6 @@
 
 int main(void) 
 {
-	printf("Hello my name is Anirban Manna"); 
+	printf("Goodbye, I finished my CS 256 HW1"); 
 	return EXIT_SUCCESS;
 }
