@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+
+
+int main()
+
+{
+    
+ 
+  int i;
+  int j;
+
+  for(i = 0; i <= 10; i++)
+  {
+     printf("\n");
+     for(j = i; j > 0; j--)
+     {
+        printf("+");
+     }
+     printf("\n");
+  }
+
+     printf("\n\n");
+
+     for(i = 10; i >= 0; i--)
+     {
+        printf("\n");
+        for(j = i; j > 0; j--)
+         {
+            printf("+");
+         }
+         printf("\n");
+      }
+
+}
+

@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int main()
+
+/*
+ * HW #2 problem 2
+ * Ocean Levels
+ */
+{
+    
+   float level = 1.5;
+   float fiveLevel = (5 * level);
+   float sevenLevel = (7 * level);
+   float tenLevel = (10 * level);
+
+   printf("In 5 years, the ocean level will be %.2f millimeters\n", fiveLevel);
+   printf("In 7 years, the ocean level will be %.2f millimeters\n", sevenLevel);
+   printf("In 10 years, the ocean level will be %.2f millimeters\n", tenLevel);
+   return 0;
+}

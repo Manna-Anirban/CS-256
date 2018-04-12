@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+
+#include <math.h>
+
+int main()
+
+{
+    
+ double mealCost = 88.67;
+    
+ double tax = 0.0675;
+    
+ double tip = 0.20;
+    
+    
+
+ double calculatedTax = tax*mealCost;
+    
+ double newMealCost = mealCost + calculatedTax;
+ 
+double calculatedTip = newMealCost*tip;
+    
+ double totalCharge = mealCost + calculatedTax + calculatedTip;
+  
+ printf("Cost of the meal: $%.2f\n" ,mealCost);
+    
+ printf("Calculated Tax: $%.2f\n" ,calculatedTax);
+    
+ printf("Calculated Tip: $%.2f\n" ,calculatedTip);
+    
+ printf("Total Charge: $%.2f\n" ,totalCharge);
+    
+
+ return 0;
+
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+
+
+int main()
+
+{
+    
+ 
+ int shareNumber = 1000;
+ float sharePrice = 45.50;   
+ float commission = 0.02;
+ float profitShare = 6.95;
+ 
+ float totalSharePrice = shareNumber*sharePrice;
+ float commissionPrice1 = totalSharePrice*commission;
+ float totalProfit = profitShare*shareNumber;
+ float commissionPrice2 = totalProfit*commission;
+
+ float finalProfit = ((totalProfit - commissionPrice2) - (totalSharePrice - commissionPrice1));
+
+ printf("Joe paid %.2f for the stock\n", totalSharePrice);
+ printf("Joe paid his broker %.2f when he bought the stock\n", commissionPrice1);
+ printf("Joe sold the stock for %.2f\n", totalProfit);
+ printf("Joe paid his broker %.2f when he sold the stock\n", commissionPrice2);
+ printf("The amount of profit Joe made: %.2f", finalProfit);
+ return 0;
+
+}
