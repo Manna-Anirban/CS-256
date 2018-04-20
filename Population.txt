@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+  int size, years;
+  float birthRate, deathRate;
+  
+  printf("Starting size of population: ");
+  scanf("%d", &size);
+  if(size < 2)
+  {
+     printf("Invalid input");
+     exit(0);
+  }
+  printf("Annual birth rate: ");
+  scanf("%d", &birthRate);
+  if(birthRate < 0)
+  {
+     printf("Invalid input");
+     exit(0);
+  }
+  
+  printf("Annual death rate: ");
+  scanf("%d", &deathRate);
+  if(deathRate < 0)
+  {
+     printf("Invalid input");
+     exit(0);
+  }
+  
+  printf("Number of years: ");
+  scanf("%d", &years);
+  if(years < 1)
+  {
+     printf("Invalid input");
+     exit(0);
+  }
+  
+  int function = (size + (size*birthRate) - (size*deathRate));
+  int newPop = function * years;
+  printf("%d", newPop);
+  return 0;
+}

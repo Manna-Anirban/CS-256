@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+// unfinished, hard time implementing code
+
+int main()
+{
+ char tictactoe[3][3];
+ int x,y;
+
+ for(x=0;x<3;x++)
+ {
+   for(y=0;y<3;y++)
+   {
+     tictactoe[x][y]='*';
+     printf("%c", tictactoe[x][y]);     
+   }
+   printf("\n");
+ }
+ while(isFull != -1)
+ {
+  int row, col;
+ 
+  printf("Player1: Enter row: ");
+  scanf("%d",&row);
+  printf("Enter a column: ");
+  scanf("%d",&col);
+ 
+  tictactoe[row][col] = 'X';
+  for(x=0;x<3;x++)
+  {
+    for(y=0;y<3;y++)
+    {
+      printf("%c", tictactoe[x][y]);
+    
+    }
+    printf("\n");
+  }
+  int row2, col2
+  printf("Player2: Enter row: ");
+  scanf("%d",&row2);
+  printf("Enter a column: ");
+  scanf("%d",&col2);
+ 
+  tictactoe[row2][col2] = 'O';
+  for(x=0;x<3;x++)
+  {
+    for(y=0;y<3;y++)
+    {
+      printf("%c", tictactoe[x][y]);
+    }
+    printf("\n");
+  }
+ }
+ 
+  return(0);
+}
+int isFull()
+{
+   int x,y;
+   for(x=0;x<3;x++)
+   {
+     for(y=0;y<3;y++)
+     {
+       if (tictactoe[x][y]=='*')
+       {
+           return 0;
+       }
+       else
+         return -1;
+}

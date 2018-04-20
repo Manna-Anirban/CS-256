@@ -1,0 +1,81 @@
+#include <stdio.h>
+#define M_PI 3.14159265358979323846
+
+int main()
+{
+ 
+  printf("Geometry Calculator\n");
+  printf("1. Calculate the Area of a Circle\n");
+  printf("2. Calculate the Area of a Rectangle\n");
+  printf("3. Calculate the Area of a Triangle\n");
+  printf("4. Quit\n");
+  choosing();
+}
+void choosing()
+{
+     int choose;
+     scanf("%d", &choose);
+     if(choose == 1)
+     {
+           int chooseRadius;
+           printf("Enter a radius: ");
+           scanf("%d", &chooseRadius);
+           if(chooseRadius < 0)
+           {
+               printf("Invalid input");
+               exit(0);
+           } 
+           float area1 = (chooseRadius*chooseRadius)*M_PI;
+           printf("\nThis is the area of the circle:%.2f ", area1);
+     }
+     else if(choose == 2)
+     {
+       int chooseLength, chooseWidth;
+       printf("Enter a length: ");
+       scanf("%d", &chooseLength);
+       if(chooseLength < 0)
+        {
+          printf("Invalid input");
+          exit(0);
+        }
+       printf("Enter a width: ");
+       scanf("%d", &chooseWidth);
+       if(chooseWidth < 0)
+           {
+               printf("Invalid input");
+               exit(0);
+           }
+       int area2 = chooseLength*chooseWidth;
+       printf("\nThis is the area of the rectangle: %d", area2);
+      }
+      else if(choose == 3)
+      {
+          int chooseBase, chooseHeight;
+          printf("Enter a base length: ");
+          scanf("%d", &chooseBase);
+          if(chooseBase < 0)
+           {
+               printf("Invalid input");
+               exit(0);
+           }
+          printf("Enter a height: ");
+          scanf("%d", &chooseHeight);
+          if(chooseHeight < 0)
+           {
+               printf("Invalid input");
+               exit(0);
+           }
+          float area3 = chooseBase*chooseHeight*0.5;
+          printf("\nThis is the area of the triangle: %.2f", area3);
+      }
+      else if(choose == 4)
+      {
+          printf("Goodbye");
+          exit(0);
+      }
+      else
+      {
+            printf("Invalid input");
+      }
+      
+}
