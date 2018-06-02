@@ -1,0 +1,150 @@
+\hypertarget{class_big_number}{}\section{Big\+Number Class Reference}
+\label{class_big_number}\index{Big\+Number@{Big\+Number}}
+
+
+{\ttfamily \#include $<$Big\+Number.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_big_number_ac6701b663665e17ab6d71df11bc1cc8f}{Big\+Number}} (string s)
+\item 
+\mbox{\hyperlink{class_big_number_a0d12fbec476322042ba36e61e1b0db82}{Big\+Number}} ()
+\item 
+\mbox{\hyperlink{class_big_number}{Big\+Number}} \mbox{\hyperlink{class_big_number_a7f0d5c2a04106dd3e68a141ce12de401}{operator+}} (const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&r)
+\item 
+\mbox{\hyperlink{class_big_number}{Big\+Number}} \mbox{\hyperlink{class_big_number_abfa620773f36a7f2b17b60c2ce764fb5}{operator-\/}} (const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&r)
+\item 
+\mbox{\hyperlink{class_big_number}{Big\+Number}} \mbox{\hyperlink{class_big_number_a8cadbd12a3a0f1d70295cd90dc531f34}{operator$\ast$}} (const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&r)
+\item 
+\mbox{\hyperlink{class_big_number}{Big\+Number}} \mbox{\hyperlink{class_big_number_a8efbdb004a3710576a1de72d338ba63a}{operator/}} (const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&r)
+\item 
+\mbox{\hyperlink{class_big_number}{Big\+Number}} \mbox{\hyperlink{class_big_number_a682eee18133f6bb3dff3147c38e83f30}{operator\%}} (const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&r)
+\item 
+void \mbox{\hyperlink{class_big_number_a12b0e9ff1459434b916e73468bd41981}{print}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_big_number_a106884b978df72a2efed8dd0998ea4f7}{add}} (const vector$<$ int $>$ \&x, const vector$<$ int $>$ \&y, vector$<$ int $>$ \&z)
+\item 
+void \mbox{\hyperlink{class_big_number_aca6e58170c413393a9931ae75c9f2b49}{subtract}} (const vector$<$ int $>$ \&x, const vector$<$ int $>$ \&y, vector$<$ int $>$ \&z)
+\item 
+void \mbox{\hyperlink{class_big_number_a7100fbbaded92b611ebda6261d3cff9d}{multiply}} (const vector$<$ int $>$ \&x, const vector$<$ int $>$ \&y, vector$<$ int $>$ \&z)
+\item 
+void \mbox{\hyperlink{class_big_number_ae69ae04694d805916f92ebf9dae3f49b}{divide}} (const vector$<$ int $>$ \&x, const vector$<$ int $>$ \&y, vector$<$ int $>$ \&z)
+\item 
+void \mbox{\hyperlink{class_big_number_ac341f25984e6bfe4559dd6029209095c}{modulus}} (const vector$<$ int $>$ \&x, const vector$<$ int $>$ \&y, vector$<$ int $>$ \&z)
+\item 
+void \mbox{\hyperlink{class_big_number_a4a76b5eeaa9d6be09d2b3acaff576839}{Flip}} (vector$<$ int $>$ \&r)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_big_number_aefe6af3de273c7e77d02f08f9f6067d0}{number}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_big_number_ac6701b663665e17ab6d71df11bc1cc8f}\label{class_big_number_ac6701b663665e17ab6d71df11bc1cc8f}} 
+\index{Big\+Number@{Big\+Number}!Big\+Number@{Big\+Number}}
+\index{Big\+Number@{Big\+Number}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{Big\+Number()}{BigNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Big\+Number\+::\+Big\+Number (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_a0d12fbec476322042ba36e61e1b0db82}\label{class_big_number_a0d12fbec476322042ba36e61e1b0db82}} 
+\index{Big\+Number@{Big\+Number}!Big\+Number@{Big\+Number}}
+\index{Big\+Number@{Big\+Number}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{Big\+Number()}{BigNumber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Big\+Number\+::\+Big\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_big_number_a106884b978df72a2efed8dd0998ea4f7}\label{class_big_number_a106884b978df72a2efed8dd0998ea4f7}} 
+\index{Big\+Number@{Big\+Number}!add@{add}}
+\index{add@{add}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Big\+Number\+::add (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$ \&}]{x,  }\item[{const vector$<$ int $>$ \&}]{y,  }\item[{vector$<$ int $>$ \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_big_number_ae69ae04694d805916f92ebf9dae3f49b}\label{class_big_number_ae69ae04694d805916f92ebf9dae3f49b}} 
+\index{Big\+Number@{Big\+Number}!divide@{divide}}
+\index{divide@{divide}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily void Big\+Number\+::divide (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$ \&}]{x,  }\item[{const vector$<$ int $>$ \&}]{y,  }\item[{vector$<$ int $>$ \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_big_number_a4a76b5eeaa9d6be09d2b3acaff576839}\label{class_big_number_a4a76b5eeaa9d6be09d2b3acaff576839}} 
+\index{Big\+Number@{Big\+Number}!Flip@{Flip}}
+\index{Flip@{Flip}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily void Big\+Number\+::\+Flip (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_big_number_ac341f25984e6bfe4559dd6029209095c}\label{class_big_number_ac341f25984e6bfe4559dd6029209095c}} 
+\index{Big\+Number@{Big\+Number}!modulus@{modulus}}
+\index{modulus@{modulus}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{modulus()}{modulus()}}
+{\footnotesize\ttfamily void Big\+Number\+::modulus (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$ \&}]{x,  }\item[{const vector$<$ int $>$ \&}]{y,  }\item[{vector$<$ int $>$ \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_big_number_a7100fbbaded92b611ebda6261d3cff9d}\label{class_big_number_a7100fbbaded92b611ebda6261d3cff9d}} 
+\index{Big\+Number@{Big\+Number}!multiply@{multiply}}
+\index{multiply@{multiply}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily void Big\+Number\+::multiply (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$ \&}]{x,  }\item[{const vector$<$ int $>$ \&}]{y,  }\item[{vector$<$ int $>$ \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_big_number_a682eee18133f6bb3dff3147c38e83f30}\label{class_big_number_a682eee18133f6bb3dff3147c38e83f30}} 
+\index{Big\+Number@{Big\+Number}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{operator\%()}{operator\%()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_number}{Big\+Number}} Big\+Number\+::operator\% (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_a8cadbd12a3a0f1d70295cd90dc531f34}\label{class_big_number_a8cadbd12a3a0f1d70295cd90dc531f34}} 
+\index{Big\+Number@{Big\+Number}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_number}{Big\+Number}} Big\+Number\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_a7f0d5c2a04106dd3e68a141ce12de401}\label{class_big_number_a7f0d5c2a04106dd3e68a141ce12de401}} 
+\index{Big\+Number@{Big\+Number}!operator+@{operator+}}
+\index{operator+@{operator+}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_number}{Big\+Number}} Big\+Number\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_abfa620773f36a7f2b17b60c2ce764fb5}\label{class_big_number_abfa620773f36a7f2b17b60c2ce764fb5}} 
+\index{Big\+Number@{Big\+Number}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_number}{Big\+Number}} Big\+Number\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_a8efbdb004a3710576a1de72d338ba63a}\label{class_big_number_a8efbdb004a3710576a1de72d338ba63a}} 
+\index{Big\+Number@{Big\+Number}!operator/@{operator/}}
+\index{operator/@{operator/}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_number}{Big\+Number}} Big\+Number\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_number}{Big\+Number}} \&}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_a12b0e9ff1459434b916e73468bd41981}\label{class_big_number_a12b0e9ff1459434b916e73468bd41981}} 
+\index{Big\+Number@{Big\+Number}!print@{print}}
+\index{print@{print}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Big\+Number\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_big_number_aca6e58170c413393a9931ae75c9f2b49}\label{class_big_number_aca6e58170c413393a9931ae75c9f2b49}} 
+\index{Big\+Number@{Big\+Number}!subtract@{subtract}}
+\index{subtract@{subtract}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily void Big\+Number\+::subtract (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$ \&}]{x,  }\item[{const vector$<$ int $>$ \&}]{y,  }\item[{vector$<$ int $>$ \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_big_number_aefe6af3de273c7e77d02f08f9f6067d0}\label{class_big_number_aefe6af3de273c7e77d02f08f9f6067d0}} 
+\index{Big\+Number@{Big\+Number}!number@{number}}
+\index{number@{number}!Big\+Number@{Big\+Number}}
+\subsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily vector$<$int$>$ Big\+Number\+::number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anirban/\+Desktop/\+Big\+Number/\mbox{\hyperlink{_big_number_8h}{Big\+Number.\+h}}\item 
+C\+:/\+Users/\+Anirban/\+Desktop/\+Big\+Number/\mbox{\hyperlink{_big_number_8cpp}{Big\+Number.\+cpp}}\end{DoxyCompactItemize}
